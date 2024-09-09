@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Chuck's Jokes</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Chuck's jokes</h1>
+    </header>
+ 
+    <section class="search-section">
+        <label for="search">search for chuck's jokes</label>
+        <input type="search" id="search" placeholder="search">
+        <span class="result-count"></span>
+        <div class="search-results"></div>
+    </section>
+ 
+    <div class="wrapper">
+        <label for="categories" class="category-label">by category</label>
+        <select name="categories" id="categories">
+            <option value="" disabled selected>select category</option>
+        </select>
+        <button class="generate-joke-button">Generate joke</button>
+        <h4 class="random-jokes"></h4>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

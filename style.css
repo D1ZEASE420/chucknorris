@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #ff4500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.search-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-section label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.search-section input[type="search"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-top: 10px;
+    outline: none;
+}
+
+.search-section input[type="search"]:focus {
+    border-color: #ff4500;
+}
+
+.result-count {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+
+.search-results, .random-jokes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.joke-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.joke-box:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+
+.wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.category-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#categories {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button.generate-joke-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.generate-joke-button:hover {
+    background-color: #e63d00;
+}
+
+
+@media (max-width: 768px) {
+    .search-section input[type="search"],
+    #categories {
+        width: 100%;
+        max-width: none;
+    }
+
+    button.generate-joke-button {
+        width: 100%;
+    }
+
+    .joke-box {
+        max-width: 100%; 
+    }
+}
